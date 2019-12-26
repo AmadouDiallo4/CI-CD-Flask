@@ -14,7 +14,7 @@ def hello():
 def text_box():
     text = request.form['text']
     processed_text = text.upper()
-    return render_template("page_suivante.html", message = processed_text)
+    return render_template("page_suivante.html", message=processed_text)
 
 if __name__ == "__main__":
     APP.run(host="0.0.0.0", port=5000)
