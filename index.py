@@ -1,9 +1,9 @@
 """ ceci est un test flask"""
 
 from flask import Flask
-app = Flask(__name__)
+APP = Flask(__name__)
 
-@App.route('/')
+@APP.route('/')
 def hello():
     """Affiche Helleo"""
 
@@ -11,4 +11,4 @@ def hello():
 
 if __name__ == "__main__":
     """main fucntion"""
-    App.run(host="0.0.0.0", port=5000)
+    APP.run(host="0.0.0.0", port=5000)
