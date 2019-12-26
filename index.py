@@ -12,6 +12,7 @@ def hello():
 
 @APP.route('/', methods=['POST'])
 def text_box():
+    """ method post"""
     text = request.form['text']
     processed_text = text.upper()
     return render_template("page_suivante.html", message=processed_text)
